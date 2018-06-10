@@ -1,0 +1,24 @@
+<p>
+  Scheduling
+</p>
+<table style="width:100%">
+  <tr *ngFor="let x of casaEmpSchedule.monday">
+    <td>
+      <table class="zui-table zui-table-highlight-all">
+        <tr>
+          <td colspan="4"> {{x.buildingId}}</td>
+
+        </tr>
+        <tr *ngFor="let y of x.employees">
+          <td> {{y.empId}}</td>
+          <td> {{y.empName}}</td>
+          <td> {{y.empInTime}}</td>
+          <td> {{y.empExitTime}}</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+
+
+</table>
